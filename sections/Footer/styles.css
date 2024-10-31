@@ -1,0 +1,139 @@
+.footer__root {
+  padding-bottom: 64px;
+}
+
+.footer__mobile_logo {
+  display: none;
+}
+
+.footer__desktop_logo {
+  display: block;
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__header h2 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: var(--font-playfair);
+  max-width: 560px;
+}
+
+.footer__download_btn_container p {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.footer__download_btns {
+  margin-top: 26px;
+  display: flex;
+  gap: 21px;
+}
+
+.footer__download_btns img {
+  width: 148px;
+  height: 49px;
+}
+
+.footer__details {
+  margin-top: 74px;
+  display: flex;
+  gap: 100px;
+}
+
+.footer__detail__title {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.footer__detail__desc {
+  margin-top: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.footer__links {
+  margin-top: 75px;
+}
+
+.footer__links__logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__links_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 52px;
+}
+
+.footer__links_container ul {
+  display: flex;
+  gap: 43px;
+}
+
+.footer__links_container ul li {
+  font-weight: 400;
+}
+
+.footer__links_card_logos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer__links_card_logos img:nth-child(1) {
+  width: 43px;
+  height: 14px;
+}
+.footer__links_card_logos img:nth-child(2) {
+  width: 31px;
+  height: 31px;
+}
+.footer__links_card_logos img:nth-child(3) {
+  width: 26px;
+  height: 26px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__mobile_logo {
+    width: 200px;
+    height: 46px;
+    margin-bottom: 28px;
+    display: block;
+  }
+  .footer__desktop_logo {
+    display: none;
+  }
+  .footer__header {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 48px;
+  }
+  .footer__header h2 {
+    font-size: 45px;
+  }
+  .footer__details {
+    flex-direction: column;
+    gap: 42px;
+  }
+  .footer__links_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 26px;
+  }
+  .footer__links_container ul {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .footer__download_btns {
+    gap: 18px;
+  }
+}

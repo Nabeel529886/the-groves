@@ -1,0 +1,54 @@
+.experience__root {
+  display: flex;
+  gap: 86px;
+  margin-top: 127px;
+  margin-left: 10%;
+  overflow-x: hidden;
+}
+
+.experience__header {
+  width: 100%;
+  max-width: 268px;
+  margin-top: 72px;
+}
+
+.experience__header h2 {
+  font-size: 50px;
+  font-family: var(--font-playfair);
+  font-weight: 400;
+}
+
+.experience__header button {
+  margin-top: 40px;
+}
+
+.experience__cards_container {
+  display: flex;
+  gap: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .experience__root {
+    margin-left: 0;
+    padding: 0 36px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .experience__root {
+    flex-direction: column;
+    gap: 58px;
+  }
+  .experience__header {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience__root {
+    margin-top: 67px;
+  }
+  .experience__header h2 {
+    font-size: 45px;
+  }
+}

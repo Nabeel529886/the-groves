@@ -1,0 +1,79 @@
+.hero__root {
+  width: 100%;
+  height: 100vh;
+  background: url("/images/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container {
+  width: 100%;
+  flex-grow: 1;
+  z-index: 0;
+  height: max-content;
+}
+
+.hero__container__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.52);
+  z-index: 0;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 20px;
+  width: 48%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__content h5 {
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+.hero__content h1 {
+  font-size: 68px;
+  line-height: 110%;
+  font-weight: 400;
+  font-family: var(--font-playfair);
+}
+
+.hero__content p {
+  max-width: 400px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.hero__content button {
+  margin-top: 36px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero__container__overlay {
+    width: 100%;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__content h1 {
+    font-size: 50px;
+  }
+}

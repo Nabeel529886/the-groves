@@ -1,0 +1,38 @@
+.ticket__root {
+  margin-top: 105px;
+  overflow-x: hidden;
+}
+
+.ticket__root h2 {
+  width: 100%;
+  font-size: 50px;
+  font-family: var(--font-playfair);
+  font-weight: 400;
+  line-height: 64px;
+  max-width: 700px;
+}
+
+.ticket__root button {
+  margin-top: 38px;
+}
+
+.ticket__cards {
+  margin-top: 63px;
+  margin-left: 10%;
+  display: flex;
+  gap: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .ticket__cards {
+    margin-left: 0;
+    padding: 0 36px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .ticket__root h2 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+}

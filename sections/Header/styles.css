@@ -1,0 +1,43 @@
+.header__root {
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 220px;
+  height: 50px;
+  z-index: 100;
+}
+
+.header__ctas {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__ctas {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo {
+    width: 160px;
+    height: 40px;
+  }
+}

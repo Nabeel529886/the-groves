@@ -1,0 +1,49 @@
+:root {
+  --bg-primary: transparent linear-gradient(97deg, #283606 0%, #0f1500 100%) 0%
+    0% no-repeat padding-box;
+  --button-bg-primary: transparent
+    linear-gradient(180deg, #ad8749 0%, #dcbb75 100%) 0% 0% no-repeat
+    padding-box;
+  --card-bg: transparent linear-gradient(90deg, #344014, #252d10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: white;
+  font-family: var(--font-inter);
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.md_container {
+  width: 100%;
+  max-width: 904px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 36px;
+  }
+}

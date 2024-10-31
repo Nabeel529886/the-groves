@@ -1,0 +1,22 @@
+.button__root {
+  cursor: pointer;
+  background: var(--button-bg-primary);
+  border: none;
+  padding: 15px 50px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.button__with_icon {
+  padding: 15px 20px 15px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.button__with_icon svg {
+  width: 32px;
+}

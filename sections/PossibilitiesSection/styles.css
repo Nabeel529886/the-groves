@@ -1,0 +1,100 @@
+.possibility__root {
+  margin-top: 64px;
+}
+
+.possibility__head_content h1 {
+  font-size: 50px;
+  font-family: var(--font-playfair);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.possibility__head_content p {
+  max-width: 775px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 13px;
+  line-height: 23px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.possibility__head_content h1,
+.possibility__head_content p {
+  text-align: center;
+}
+
+.possibility__video_container {
+  margin-top: 60px;
+  position: relative;
+}
+
+.possibility__video_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.possibility__video_container .possibility__play_icon {
+  cursor: pointer;
+  position: absolute;
+  height: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.possibility_card__root {
+  margin-top: 22px;
+  padding: 37px 32px;
+  border-radius: 25px;
+  background: var(--card-bg);
+}
+
+.possibility_card__root span {
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.possibility_card__desktop_icon {
+  display: block;
+}
+
+.possibility_card__mobile_icon {
+  display: none;
+}
+
+.possibility_card__title {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-playfair);
+}
+
+.possibility_card__title h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.possibility_card__root p {
+  max-width: 70%;
+  margin-top: 17px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+@media screen and (max-width: 600px) {
+  .possibility_card__root p {
+    max-width: 100%;
+  }
+  .possibility_card__desktop_icon {
+    display: none;
+  }
+  .possibility_card__mobile_icon {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+  }
+}
